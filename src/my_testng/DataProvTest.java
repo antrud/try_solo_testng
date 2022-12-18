@@ -55,7 +55,7 @@ public class DataProvTest {
         Assert.assertEquals(currentUrl, searchUrl, "Wrong URL displayed");
 
         WebElement etSearchField = driver.findElement(By.xpath(".//*[@name='q']"));
-        etSearchField.sendKeys("Selenium");
+        etSearchField.sendKeys("git merge vs rebase");
         etSearchField.submit();
         Thread.sleep(2_000);
         System.out.println("Page title is " + driver.getTitle());
